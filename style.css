@@ -822,3 +822,21 @@ footer ul li a:hover {
   list-style: none;
   padding-left: 0;
 }
+
+
+/* Custom overrides for lists and icons */
+.city-services ul, .city-links ul, footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.city-services a, .city-links a {
+  color: #FFC107;
+  text-decoration: none;
+}
+.city-services a:hover, .city-links a:hover {
+  text-decoration: underline;
+}
+.card-icon i {
+  color: #FFC107 !important;
+}
