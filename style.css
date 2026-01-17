@@ -267,6 +267,17 @@ footer {
   font-size: 14px;
 }
 
+/* If a page uses Bootstrap's .bg-light on the footer, Bootstrap sets a light
+   background with !important. Ensure text stays readable. */
+footer.bg-light,
+footer.bg-light p {
+  color: #212529 !important;
+}
+
+footer.bg-light a {
+  color: #0d6efd !important;
+}
+
 /* Blog section */
 .blog-section {
   padding: 40px;
@@ -839,4 +850,48 @@ footer ul li a:hover {
 }
 .card-icon i {
   color: #FFC107 !important;
+}
+
+/* =============================
+   Quote form (global consistency)
+   Ensures the quote form matches the homepage on ALL pages
+   ============================= */
+#quote {
+  background: #f8f9fa;
+  padding: 40px 20px;
+}
+
+#quote h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.quote-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quote-card small {
+  display: block;
+  margin-top: 5px;
+  color: #6c757d;
+}
+
+/* Make primary CTA buttons inside forms full width (matches homepage) */
+#quote .btn-primary,
+#quote button.btn-primary {
+  width: 100%;
+}
+
+.trust-note {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 10px;
+  text-align: center;
 }
